@@ -148,7 +148,7 @@ p {
 }
 
 .nav a {
-    color: var(--text-light);
+    color: #333333;        /* тёмно-серый */
     font-weight: 500;
     font-size: 0.95rem;
     position: relative;
