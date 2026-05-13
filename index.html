@@ -5,39 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- SEO Meta Tags -->
-    <title>E-Doxod — Электронные документы для бизнеса | Excel-шаблоны, гайды, юнит-экономика</title>
+    <title>e-doxod.ru — Электронные документы для бизнеса | Excel-шаблоны, гайды, юнит-экономика</title>
     <meta name="description" content="Покупайте готовые электронные документы для бизнеса: шаблоны Excel, гайды по электронной коммерции, юнит-экономика Wildberries и Ozon. Мгновенная доставка через Telegram-бот @e_doxod_bot.">
     <meta name="keywords" content="электронные документы, шаблоны Excel, юнит-экономика, Wildberries, Ozon, цифровые продукты, гайды, бизнес">
+    <meta name="author" content="e-doxod.ru">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://e-doxod.ru/">
-    <!-- Open Graph -->
+    <!-- Open Graph / Social Media -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://e-doxod.ru/">
-    <meta property="og:title" content="E-Doxod — Электронные документы для бизнеса">
+    <meta property="og:title" content="e-doxod.ru — Электронные документы для бизнеса">
     <meta property="og:description" content="Готовые шаблоны Excel, гайды и документы для электронной коммерции. Мгновенная доставка через Telegram.">
     <meta property="og:image" content="https://e-doxod.ru/images/og-image.jpg">
+    <meta property="og:locale" content="ru_RU">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="e-doxod.ru — Электронные документы для бизнеса">
+    <meta name="twitter:description" content="Готовые шаблоны Excel, гайды и документы для электронной коммерции.">
+    <meta name="twitter:image" content="https://e-doxod.ru/images/og-image.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Styles -->
     <link rel="stylesheet" href="/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "e-doxod.ru",
+        "url": "https://e-doxod.ru",
+        "description": "Электронные документы и шаблоны для бизнеса",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://e-doxod.ru/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "e-doxod.ru",
+        "url": "https://e-doxod.ru",
+        "logo": "https://e-doxod.ru/images/logo.png",
+        "sameAs": [
+            "https://t.me/e_doxod_bot"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "url": "https://t.me/e_doxod_bot"
+        }
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
     <header class="header">
         <div class="container header-inner">
             <a href="/" class="logo">
-                <img src="/images/logo.png" alt="E-Doxod" loading="eager">
-                <span>E-Doxod</span>
+                <img src="/images/logo.png" alt="e-doxod.ru" loading="eager" onerror="this.style.display='none'">
+                <span>e-doxod</span>
             </a>
             <nav class="nav">
                 <a href="/product.html">Продукты</a>
                 <a href="/blog/">Блог</a>
                 <a href="/contacts.html">Контакты</a>
-                <a href="https://t.me/e_doxod_bot" class="btn btn-telegram" target="_blank" rel="noopener">Перейти в бот</a>
+                <a href="https://t.me/e_doxod_bot" class="btn btn-telegram" data-track="header_bot" target="_blank" rel="noopener">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.442-.751-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.477-1.635.099-.002.321.023.465.141.121.099.154.232.17.325.015.093.034.305.019.471z"/></svg>
+                    Перейти в бот
+                </a>
             </nav>
-            <button class="mobile-menu-btn" aria-label="Меню"><span></span><span></span><span></span></button>
+            <button class="mobile-menu-btn" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
-
     <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-inner">
@@ -46,9 +97,14 @@
                     <span>🚀</span> Более 500+ довольных клиентов
                 </div>
                 <h1>Как самому без копейки в кармане открыть магазин в интернете</h1>
-                <p class="hero-subtitle">Получите доступ мгновенно через Telegram-бота и начните зарабатывать уже сегодня.</p>
+                <p class="hero-subtitle">
+                           Получите доступ мгновенно через Telegram-бота и начните зарабатывать уже сегодня.
+                </p>
                 <div class="hero-cta">
-                    <a href="https://t.me/e_doxod_bot?start=site_main_hero" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Купить в Telegram-боте</a>
+                    <a href="https://t.me/e_doxod_bot?start=site_main_hero" class="btn btn-primary btn-lg" data-track="hero_main_cta" target="_blank" rel="noopener">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.442-.751-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.477-1.635.099-.002.321.023.465.141.121.099.154.232.17.325.015.093.034.305.019.471z"/></svg>
+                        Купить в Telegram-боте
+                    </a>
                     <a href="/product.html" class="btn btn-secondary btn-lg">Смотреть каталог</a>
                 </div>
                 <div class="hero-stats">
@@ -67,11 +123,10 @@
                 </div>
             </div>
             <div class="hero-image reveal">
-                <img src="/images/hero-mockup.png" alt="Электронные документы и шаблоны для бизнеса" loading="eager">
+                <img src="/images/hero-mockup.png" alt="Электронные документы и шаблоны для бизнеса" loading="eager" onerror="this.parentElement.innerHTML='<div style=\'background:linear-gradient(135deg,#1E90FF,#1DA1F2);border-radius:12px;height:400px;display:flex;align-items:center;justify-content:center;color:white;font-size:4rem;\'>📊</div>'">
             </div>
         </div>
     </section>
-
     <!-- Products Section -->
     <section class="section" id="products">
         <div class="container">
@@ -80,26 +135,264 @@
                 <p>Выберите нужный документ или гайд и получите мгновенный доступ через Telegram-бота</p>
             </div>
             <div class="products-grid">
-                <!-- ... все ваши карточки товаров остаются без изменений ... -->
-
-                <!-- White-label (обновлённый) -->
+                <!-- Product 1 -->
                 <div class="product-card reveal">
-                    <span class="product-tag">White-label</span>
-                    <h3>White-label решение</h3>
-                    <p>Готовый продукт под вашим брендом. Полная возможность перепродажи с вашей наценкой.</p>
-                    <div class="product-price">88 000 ₽ 
-                        <span style="font-size:0.9rem;color:var(--text-muted)">
-                            (по заявкам / под заказ, цена договорная в зависимости от объёма и полноты продукта)
-                        </span>
-                    </div>
-                    <a href="https://t.me/e_doxod_bot?start=site_wl" class="btn btn-primary" style="width:100%" target="_blank" rel="noopener">Узнать условия и заказать</a>
+                    <span class="product-tag">Электронная коммерция</span>
+                    <h3>Электронная коммерция</h3>
+                    <p>Базовый гайд по запуску и ведению электронного бизнеса в России</p>
+                    <div class="product-price">290 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_product_1" class="btn btn-primary" data-track="product_1" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-card reveal">
+                    <span class="product-tag">Excel</span>
+                    <h3>Как монетизировать рабочие книги Excel</h3>
+                    <p>Пошаговая инструкция по созданию и продаже Excel-шаблонов</p>
+                    <div class="product-price">790 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_product_2" class="btn btn-primary" data-track="product_2" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-card reveal">
+                    <span class="product-tag">Запуск</span>
+                    <h3>Пошаговый запуск первого цифрового продукта за 14 дней</h3>
+                    <p>Полный план действий от идеи до первых продаж за 2 недели</p>
+                    <div class="product-price">990 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_product_3" class="btn btn-primary" data-track="product_3" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-card reveal">
+                    <span class="product-tag">Автоматизация</span>
+                    <h3>Автоматизация продаж цифровых товаров</h3>
+                    <p>Настройка воронок, ботов и системы доставки без вашего участия</p>
+                    <div class="product-price">1 290 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_product_4" class="btn btn-primary" data-track="product_4" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-card reveal">
+                    <span class="product-tag">Маркетинг</span>
+                    <h3>Маркетинг без бюджета</h3>
+                    <p>Бесплатные каналы привлечения клиентов на цифровые продукты</p>
+                    <div class="product-price">1 490 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_product_5" class="btn btn-primary" data-track="product_5" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-card reveal">
+                    <span class="product-tag">Реклама</span>
+                    <h3>Реклама, которая окупается</h3>
+                    <p>Настройка платной рекламы с ROI выше 300% на цифровых продуктах</p>
+                    <div class="product-price">1 790 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_product_6" class="btn btn-primary" data-track="product_6" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-card reveal">
+                    <span class="product-tag">Продукты</span>
+                    <h3>Создание и продажа других цифровых продуктов</h3>
+                    <p>Расширение линейки: курсы, чек-листы, шаблоны и не только</p>
+                    <div class="product-price">1 290 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_product_7" class="btn btn-primary" data-track="product_7" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-card featured reveal">
+                    <span class="product-tag">Масштабирование</span>
+                    <h3>Масштабирование до 300–500 тыс. ₽ в месяц</h3>
+                    <p>Системный подход к росту выручки цифрового бизнеса</p>
+                    <div class="product-price">1 990 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_product_8" class="btn btn-primary" data-track="product_8" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+                <!-- Product 9 -->
+                <div class="product-card reveal">
+                    <span class="product-tag">Юриспруденция</span>
+                    <h3>Юридическая защита и налоги 2026–2027</h3>
+                    <p>Актуальная информация по налогообложению и защите цифрового бизнеса</p>
+                    <div class="product-price">890 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_product_9" class="btn btn-primary" data-track="product_9" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+                <!-- Product 10 -->
+                <div class="product-card reveal">
+                    <span class="product-tag">Аудит</span>
+                    <h3>Диагностика и корректировка системы</h3>
+                    <p>Чек-лист аудита вашего текущего бизнеса и точки роста</p>
+                    <div class="product-price">1 490 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_product_10" class="btn btn-primary" data-track="product_10" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Остальные секции (Features, Testimonials, Blog, CTA) остаются без изменений -->
-
+    <!-- Additional Products -->
+    <section class="section section-alt" id="extras">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Дополнительные продукты</h2>
+                <p>Юнит-экономика маркетплейсов и white-label решения</p>
+            </div>
+            <div class="products-grid">
+                <div class="product-card reveal">
+                    <span class="product-tag">Wildberries</span>
+                    <h3>Unit-экономика Wildberries (FBO)</h3>
+                    <p>Шаблон Excel с авторасчётом прибыли, себестоимости и точки безубыточности</p>
+                    <div class="product-price">1 100 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_wb_unit" class="btn btn-primary" data-track="wb_unit" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+                <div class="product-card reveal">
+                    <span class="product-tag">Ozon</span>
+                    <h3>Юнит-экономика Ozon (FBO) v604.01</h3>
+                    <p>Актуальный шаблон расчёта unit-экономики для Ozon с полной формулой</p>
+                    <div class="product-price">1 100 ₽</div>
+                    <a href="https://t.me/e_doxod_bot?start=site_ozon_unit" class="btn btn-primary" data-track="ozon_unit" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+                <div class="product-card reveal">
+                    <span class="product-tag">White-label</span>
+                    <h3>White-label решение</h3>
+                    <p>Готовый продукт под вашим брендом. Перепродажа с вашей наценкой</p>
+                    <div class="product-price">33 990 ₽ <span style="font-size:0.9rem;color:var(--text-muted)">(закончился)</span></div>
+                    <a href="https://t.me/e_doxod_bot?start=site_wl" class="btn btn-primary" data-track="white_label" style="width:100%" target="_blank" rel="noopener">Купить в боте</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Почему выбирают e-doxod</h2>
+                <p>Мы создаём документы, которые реально работают и приносят деньги</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item reveal">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Мгновенная доставка</h3>
+                    <p>Получите файл сразу после оплаты через Telegram-бота. Никаких ожиданий и почты.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">📊</div>
+                    <h3>Проверенные данные</h3>
+                    <p>Все шаблоны и гайды основаны на реальном опыте работы с маркетплейсами и цифровыми продуктами.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Бесплатные обновления</h3>
+                    <p>При изменении условий маркетплейсов или законодательства шаблоны обновляются бесплатно.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Гарантия качества</h3>
+                    <p>Если документ не подошёл — напишите в поддержку, разберёмся и поможем. Ваш успех — наша цель.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">💰</div>
+                    <h3>Окупаемость от 1 сделки</h3>
+                    <p>Средний клиент окупает покупку уже на первой продаже своего продукта или первом расчёте юнит-экономики.</p>
+                </div>
+                <div class="feature-item reveal">
+                    <div class="feature-icon">📱</div>
+                    <h3>Удобный формат</h3>
+                    <p>Все документы в привычных форматах: Excel, PDF, Google Sheets. Работайте с телефона или компьютера.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Отзывы клиентов</h2>
+                <p>Реальные истории людей, которые уже используют наши документы</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">«Купил шаблон юнит-экономики для WB — сразу увидел, что продаю в минус на двух позициях. Пересчитал цены, ушёл в плюс через неделю. Окупил покупку в первый же день.»</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">АК</div>
+                        <div>
+                            <div class="testimonial-name">Алексей К.</div>
+                            <div class="testimonial-role">Продавец на Wildberries</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">«Гайд по запуску цифрового продукта за 14 дней — это золото. Чёткий план, никакой воды. Запустила свой первый шаблон Excel и продала 47 копий за месяц.»</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">МР</div>
+                        <div>
+                            <div class="testimonial-name">Марина Р.</div>
+                            <div class="testimonial-role">Автор цифровых продуктов</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">«Шаблон для Ozon помог разобраться с комиссиями и логистикой. Теперь точно знаю, какая цена мне нужна. Рекомендую всем, кто работает с FBO.»</p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">ДС</div>
+                        <div>
+                            <div class="testimonial-name">Дмитрий С.</div>
+                            <div class="testimonial-role">Основатель бренда на Ozon</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Preview -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <h2>Полезные материалы</h2>
+                <p>Бесплатные статьи для роста вашего бизнеса</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card reveal">
+                    <div class="blog-card-image">📝</div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>5 мин чтения</span>
+                            <span>15 апреля 2026</span>
+                        </div>
+                        <h3>Как начать продавать цифровые продукты в 2026 году</h3>
+                        <p>Пошаговый разбор рынка, выбор ниши и первые шаги от идеи до первой продажи.</p>
+                        <a href="/blog/post-1.html" class="read-more">Читать статью →</a>
+                    </div>
+                </article>
+                <article class="blog-card reveal">
+                    <div class="blog-card-image">📈</div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>7 мин чтения</span>
+                            <span>28 марта 2026</span>
+                        </div>
+                        <h3>Юнит-экономика маркетплейсов: полный гайд</h3>
+                        <p>Разбираем формулу прибыли на Wildberries и Ozon: от себестоимости до чистого дохода.</p>
+                        <a href="/blog/post-2.html" class="read-more">Читать статью →</a>
+                    </div>
+                </article>
+                <article class="blog-card reveal">
+                    <div class="blog-card-image">🛡️</div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>4 мин чтения</span>
+                            <span>10 марта 2026</span>
+                        </div>
+                        <h3>Налоги для цифрового бизнеса в 2026–2027</h3>
+                        <p>Как легально продавать электронные документы и не платить лишнего налоговому.</p>
+                        <a href="/blog/post-3.html" class="read-more">Читать статью →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Готовы начать зарабатывать?</h2>
+            <p>Присоединяйтесь к 500+ предпринимателям, которые уже используют наши документы для роста бизнеса</p>
+            <a href="https://t.me/e_doxod_bot?start=site_footer_cta" class="btn btn-lg" data-track="footer_cta" target="_blank" rel="noopener">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.442-.751-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.477-1.635.099-.002.321.023.465.141.121.099.154.232.17.325.015.093.034.305.019.471z"/></svg>
+                Перейти в Telegram-бот
+            </a>
+        </div>
+    </section>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -107,11 +400,29 @@
                 <div>
                     <div class="footer-brand">
                         <img src="/images/logo.png" alt="" onerror="this.style.display='none'">
-                        E-Doxod
+                        e-doxod.ru
                     </div>
-                    <p class="footer-desc">Готовые электронные документы, шаблоны Excel и гайды для бизнеса.</p>
+                    <p class="footer-desc">
+                        Готовые электронные документы, шаблоны Excel и гайды для бизнеса.
+                        Мгновенная доставка через Telegram-бота @e_doxod_bot.
+                    </p>
                 </div>
-                <!-- Остальные колонки футера оставляем как были -->
+                <div class="footer-column">
+                    <h4>Продукты</h4>
+                    <ul>
+                        <li><a href="/product.html#ecommerce">Электронная коммерция</a></li>
+                        <li><a href="/product.html#unit">Юнит-экономика</a></li>
+                        <li><a href="/product.html#white-label">White-label</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Компания</h4>
+                    <ul>
+                        <li><a href="/blog/">Блог</a></li>
+                        <li><a href="/contacts.html">Контакты</a></li>
+                        <li><a href="https://t.me/e_doxod_bot" target="_blank" rel="noopener">Поддержка</a></li>
+                    </ul>
+                </div>
                 <div class="footer-column">
                     <h4>Правовая информация</h4>
                     <ul>
@@ -121,95 +432,123 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>© 2026 E-Doxod. Все права защищены.</p>
+                <p>© 2026 e-doxod.ru. Все права защищены.</p>
+                <p>ИП [ФИО] | ИНН [ИНН] | ОГРНИП [ОГРНИП]</p>
             </div>
         </div>
     </footer>
-
+    <!-- Telegram Floating Widget -->
+    <div class="telegram-widget">
+        <a href="https://t.me/e_doxod_bot?start=site_widget" target="_blank" rel="noopener" aria-label="Написать в Telegram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.562 8.161c-.18 1.897-.962 6.502-1.359 8.627-.168.9-.5 1.201-.82 1.23-.697.064-1.226-.461-1.901-.903-1.056-.692-1.653-1.123-2.678-1.799-1.185-.781-.417-1.21.258-1.911.177-.184 3.247-2.977 3.307-3.23.007-.032.015-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.139-5.062 3.345-.479.329-.913.489-1.302.481-.428-.009-1.252-.242-1.865-.442-.751-.244-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.831-2.529 6.998-3.015 3.333-1.386 4.025-1.627 4.477-1.635.099-.002.321.023.465.141.121.099.154.232.17.325.015.093.034.305.019.471z"/></svg>
+            <span>Написать в Telegram</span>
+        </a>
+    </div>
+    <!-- Scripts -->
+    <script src="/js/script.js" defer></script>
+    <!-- Yandex.Metrika (раскомментируйте и замените ID при необходимости) -->
+    <!--
+    <script type="text/javascript">
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();
+       for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+       k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+       ym(YOUR_COUNTER_ID, "init", {clickmap:true,trackLinks:true,accurateTrackBounce:true});
+    </script>
+    -->
     <!-- ==================== COOKIE BANNER ==================== -->
-    <div id="cookie-banner" class="cookie-banner">
-        <div class="cookie-content">
-            <p>
-                Мы используем файлы cookies и сервис Яндекс.Метрика для анализа посещаемости и улучшения работы сайта. 
-                Продолжая использовать сайт, Вы даёте согласие на обработку персональных данных в соответствии с 
-                <a href="/privacy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a>.
-            </p>
-            <div class="cookie-buttons">
-                <button id="cookie-reject" class="btn btn-secondary">Отказаться</button>
-                <button id="cookie-accept" class="btn btn-primary">Принять</button>
-            </div>
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        <p>
+            Мы используем файлы cookies и сервис Яндекс.Метрика для анализа посещаемости и улучшения работы сайта.
+            Продолжая использовать сайт, Вы даёте согласие на обработку персональных данных в соответствии с
+            <a href="/privacy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a>.
+        </p>
+        <div class="cookie-buttons">
+            <button id="cookie-reject" class="btn btn-secondary">Отказаться от cookies</button>
+            <button id="cookie-accept" class="btn btn-primary">Принять</button>
         </div>
     </div>
-
-    <style>
-    .cookie-banner {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background: #ffffff;
-        border-top: 2px solid #2563eb;
-        box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
-        z-index: 9999;
-        padding: 18px 0;
-        display: none;
-        opacity: 0;
-        transition: all 0.4s ease;
-        transform: translateY(20px);
-    }
-    .cookie-banner.show {
-        display: block;
-        opacity: 1;
-        transform: translateY(0);
-    }
+</div>
+<style>
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 2px solid #2563eb;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    padding: 18px 0;
+    display: none;
+    font-size: 15px;
+}
+.cookie-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.cookie-content p {
+    margin: 0;
+    flex: 1;
+    min-width: 280px;
+}
+.cookie-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+}
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+.btn-secondary {
+    background: #e5e7eb;
+    color: #1f2937;
+}
+@media (max-width: 768px) {
     .cookie-content {
-        max-width: 1100px;
-        margin: 0 auto;
-        padding: 0 20px;
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
     }
-    .cookie-content p { margin: 0; flex: 1; min-width: 280px; line-height: 1.5; }
-    .cookie-buttons { display: flex; gap: 12px; }
-    .cookie-buttons button {
-        padding: 10px 20px;
-        border: none;
-        border-radius: 6px;
-        font-weight: 500;
-        cursor: pointer;
+}
+</style>
+<script>
+// Cookie banner logic
+document.addEventListener('DOMContentLoaded', function() {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('cookie-accept');
+    const rejectBtn = document.getElementById('cookie-reject');
+    // Проверяем, давал ли пользователь согласие ранее
+    if (localStorage.getItem('cookieConsent') === null) {
+        banner.style.display = 'block';
     }
-    .btn-primary { background: #2563eb; color: white; }
-    .btn-secondary { background: #e5e7eb; color: #1f2937; }
-
-    @media (max-width: 768px) {
-        .cookie-content { flex-direction: column; text-align: center; }
-    }
-    </style>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const banner = document.getElementById('cookie-banner');
-        
-        if (localStorage.getItem('cookieConsent') === null) {
-            setTimeout(() => {
-                banner.classList.add('show');
-            }, 800);
-        }
-
-        document.getElementById('cookie-accept').addEventListener('click', () => {
-            localStorage.setItem('cookieConsent', 'accepted');
-            banner.classList.remove('show');
-        });
-
-        document.getElementById('cookie-reject').addEventListener('click', () => {
-            localStorage.setItem('cookieConsent', 'rejected');
-            banner.classList.remove('show');
-        });
+    acceptBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'accepted');
+        banner.style.display = 'none';
+        // Здесь можно инициализировать Яндекс.Метрику
+        console.log('Cookies accepted');
     });
-    </script>
-
-    <script src="/js/script.js" defer></script>
+    rejectBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'rejected');
+        banner.style.display = 'none';
+        console.log('Cookies rejected');
+    });
+});
+</script>
 </body>
 </html>
