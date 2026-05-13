@@ -110,5 +110,110 @@
             <p>© 2026 E-Doxod. Все права защищены.</p>
         </div>
     </footer>
+    <!-- ==================== COOKIE BANNER ==================== -->
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        <p>
+            Мы используем файлы cookies и сервис Яндекс.Метрика для анализа посещаемости и улучшения работы сайта. 
+            Продолжая использовать сайт, Вы даёте согласие на обработку персональных данных в соответствии с 
+            <a href="/privacy.html" target="_blank" rel="noopener">Политикой конфиденциальности</a>.
+        </p>
+        <div class="cookie-buttons">
+            <button id="cookie-reject" class="btn btn-secondary">Отказаться от cookies</button>
+            <button id="cookie-accept" class="btn btn-primary">Принять</button>
+        </div>
+    </div>
+</div>
+
+<style>
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 2px solid #2563eb;
+    box-shadow: 0 -4px 12px rgba(0,0,0,0.15);
+    z-index: 9999;
+    padding: 18px 0;
+    display: none;
+    font-size: 15px;
+}
+
+.cookie-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cookie-content p {
+    margin: 0;
+    flex: 1;
+    min-width: 280px;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 12px;
+    flex-wrap: nowrap;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-secondary {
+    background: #e5e7eb;
+    color: #1f2937;
+}
+
+@media (max-width: 768px) {
+    .cookie-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+</style>
+
+<script>
+// Cookie banner logic
+document.addEventListener('DOMContentLoaded', function() {
+    const banner = document.getElementById('cookie-banner');
+    const acceptBtn = document.getElementById('cookie-accept');
+    const rejectBtn = document.getElementById('cookie-reject');
+
+    // Проверяем, давал ли пользователь согласие ранее
+    if (localStorage.getItem('cookieConsent') === null) {
+        banner.style.display = 'block';
+    }
+
+    acceptBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'accepted');
+        banner.style.display = 'none';
+        // Здесь можно инициализировать Яндекс.Метрику
+        console.log('Cookies accepted');
+    });
+
+    rejectBtn.addEventListener('click', function() {
+        localStorage.setItem('cookieConsent', 'rejected');
+        banner.style.display = 'none';
+        console.log('Cookies rejected');
+    });
+});
+</script>
 </body>
 </html>
